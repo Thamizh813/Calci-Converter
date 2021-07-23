@@ -1,5 +1,6 @@
 import 'package:calcicc/area.dart';
 import 'package:calcicc/length.dart';
+import 'package:calcicc/main.dart';
 import 'package:calcicc/power.dart';
 import 'package:calcicc/speed.dart';
 import 'package:calcicc/tem.dart';
@@ -44,6 +45,7 @@ class _UnitpageState extends State<Unitpage> {
             ),
           ),
         ),
+        drawer: Navdraw(),
         body: Column(children: [
           Padding(
             padding: EdgeInsets.only(left: 34, top: 40),

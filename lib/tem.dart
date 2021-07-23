@@ -1,3 +1,4 @@
+import 'package:calcicc/main.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(Temp());
@@ -98,6 +99,7 @@ class _TempConverterState extends State<TempConverter> {
           ),
         ),
       ),
+      drawer: Navdraw(),
       body: Padding(
         padding: const EdgeInsets.only(bottom: 80),
         child: Center(

@@ -28,7 +28,7 @@ class _SplashState extends State<Splash> {
   void initState() {
     super.initState();
     Timer(
-        Duration(seconds: 4),
+        Duration(seconds: 2),
         () => Navigator.pushReplacement(
             context, MaterialPageRoute(builder: (context) => First())));
   }
@@ -449,7 +449,7 @@ class About extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.fromLTRB(15, 2, 15, 10),
                 child: Text(
-                  'A scientific calculator is a calculator designed to help you calculate science, engineering, and mathematics problems. It has way more buttons than your standard calculator that just lets you do your four basic arithmetic operations of addition, subtraction, multiplication, and division.',
+                  'This is a simple basic calculator with memory functions similar to a small handheld calculator. Use this basic calculator for math with addition, subtraction, division and multiplication.',
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 15,

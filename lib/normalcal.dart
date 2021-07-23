@@ -47,6 +47,10 @@ class _HomePageState extends State<HomePage> {
     '.',
     '=',
     '+',
+    '(',
+    ' ',
+    ' ',
+    ')',
   ];
 
   @override
@@ -97,7 +101,7 @@ class _HomePageState extends State<HomePage> {
           ),
           Expanded(
             child: Padding(
-              padding: EdgeInsets.only(top: 80),
+              padding: EdgeInsets.only(top: 40),
               child: Container(
                 child: GridView.builder(
                     itemCount: buttons.length,
@@ -134,6 +138,28 @@ class _HomePageState extends State<HomePage> {
                       }
                       // % Button
                       else if (index == 2) {
+                        return MyButton(
+                          buttontapped: () {
+                            setState(() {
+                              userInput += buttons[index];
+                            });
+                          },
+                          buttonText: buttons[index],
+                          color: Colors.lightBlue,
+                          textColor: Colors.black,
+                        );
+                      } else if (index == 20) {
+                        return MyButton(
+                          buttontapped: () {
+                            setState(() {
+                              userInput += buttons[index];
+                            });
+                          },
+                          buttonText: buttons[index],
+                          color: Colors.lightBlue,
+                          textColor: Colors.black,
+                        );
+                      } else if (index == 23) {
                         return MyButton(
                           buttontapped: () {
                             setState(() {

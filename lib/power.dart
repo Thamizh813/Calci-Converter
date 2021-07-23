@@ -1,3 +1,4 @@
+import 'package:calcicc/main.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(Power());
@@ -188,6 +189,7 @@ class _PowerConverterState extends State<PowerConverter> {
           ),
         ),
       ),
+      drawer: Navdraw(),
       body: Padding(
         padding: const EdgeInsets.only(bottom: 80),
         child: Center(

@@ -2,7 +2,7 @@
     package="com.example.calcicc">
    <application
         android:label="calcicc"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icons">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
